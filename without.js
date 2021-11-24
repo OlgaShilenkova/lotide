@@ -3,14 +3,13 @@ Implement without which will return a subset of a given array, removing unwanted
 */
 
 
-const assertArraysEqual = function (eqArrays) {
-  if (eqArrays === true) {
+const assertArraysEqual = function(arr1,arr2) {
+  if (eqArrays(arr1,arr2)  === true) {
     console.log(`✅ Assertion Passed `);
   } else {
     console.log(`🛑 Assertion Failed `);
   }
 };
-
 
 const eqArrays = function (arr1, arr2) {
 
@@ -46,8 +45,8 @@ const without = function (source, itemsToRemove) {
   return newArray;
 }
 
-// assertArraysEqual(without([1, 2, 3], [1]), [1]);
-// assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+ assertArraysEqual(without([1, 2, 3], [1]), [1]);
+ assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 
 /*
 assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3])); // => should PASS

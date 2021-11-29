@@ -1,3 +1,4 @@
+
 const eqArrays = require("./eqArrays.js")
 
 /*
@@ -5,28 +6,24 @@ Implement assertArraysEqual which will take in two arrays and console.log an app
 */
 
 
-const assertArraysEqual = function(eqArr,bool) {
- 
-if (eqArr  === false) {
-  console.log(`🛑 Assertion Failed ${eqArr}===${false}`);
-}
-if (eqArr  === true) {
-  console.log(`✅ Assertion Passed ${eqArr}===${true}`);
-}
- };
+const assertArraysEqual = function(arr1,arr2) {
+  // assertEqual(eqArrays(arr1,arr2), true);
+  if (eqArrays(arr1,arr2)  === true) {
+    console.log(`✅ Assertion Passed ${arr1} === ${arr2}`);
+  } else {
+    console.log(`🛑 Assertion Failed${arr1} !== ${arr2}`);
+  }
+};
 
 
+//  assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
 
+//  assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
 
- assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+//  assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should Pass
 
- assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should FAIL
+// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]) // => shoul FAIL 
 
-  assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should Pass
-
- assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => shoul FAIL 
-
-
-  assertArraysEqual(eqArrays(["a", "b", "c"], ["a", "b", "c"]), true) // =>shoul PASS
+//  assertArraysEqual(["a", "b", "c"], ["a", "b", "c"]) // =>shoul PASS
 
 module.exports = assertArraysEqual;

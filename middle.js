@@ -6,9 +6,9 @@ Implement middle which will take in an array and return the middle-most element(
 
 const assertArraysEqual = function(arr1,arr2) {
   if (eqArrays(arr1,arr2)  === true) {
-    console.log(`✅ Assertion Passed `);
+    console.log(`✅ Assertion Passed ${arr1} === ${arr2}`);
   } else {
-    console.log(`🛑 Assertion Failed `);
+    console.log(`🛑 Assertion Failed${arr1} !== ${arr2}`);
   }
 };
 
@@ -47,7 +47,7 @@ const middle = function(array) {
   }
   //check if length is even number
   if (numberOfElementsInArray % 2 === 0) {
-    console.log(" I am even array", numberOfElementsInArray);
+    // console.log(" I am even array", numberOfElementsInArray);
     // devide the length by 2 to get the center
     //decrease in 1 because index starts from ziro
     let center1 = (numberOfElementsInArray / 2) - 1;
@@ -67,7 +67,7 @@ const middle = function(array) {
     return newArray;
   }
   if (numberOfElementsInArray % 2 !== 0) {
-    console.log(" I am odd array", numberOfElementsInArray);
+    // console.log(" I am odd array", numberOfElementsInArray);
     // devide the length by 2 to get the center
     // round it down
     let center = Math.floor(numberOfElementsInArray / 2);
@@ -81,18 +81,15 @@ const middle = function(array) {
 };
 
 
-// console.log(middle([1, 2, 3, 4, 5]));
+ //console.log(middle([1, 2, 3, 4, 5]));
 // console.log(middle(["a", "b", "c", "d", "e"]));
 // console.log(middle([1, 2, 3, 4, 5, 6]));
-console.log(middle(["a", "b", "c", "d"]));
+// console.log(middle(["a", "b", "c", "d"]));
 
-assertArraysEqual(middle(["a", "b", "c", "d"]), ["b", "c"]);
+//  assertArraysEqual(middle(["a", "b", "c", "d"]), ["b", "c"]);
+
 // console.log(middle([1,2]));
 // console.log(middle([1]));
 
-// assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3])); // => should PASS
-// assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1])); // => false => should FAIL
-// assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => should PASS
-// assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false => should FAIL
-// assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2"])) // => false => FAIL
-// assertArraysEqual(eqArrays(["a", "b", "c"], ["a", "b", "c"])) // => true => PASS
+
+module.exports = middle;

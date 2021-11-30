@@ -58,7 +58,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-console.log(assertObjectsEqual({ a: '1', b: '2' }, { a: '1', b: '2' }));
-console.log(assertObjectsEqual({ a: '1' }, { b: '2' }));
+// console.log(assertObjectsEqual({ a: '1', b: '2' }, { a: '1', b: '2' }));
+// console.log(assertObjectsEqual({ a: '1' }, { b: '2' }));
 
 

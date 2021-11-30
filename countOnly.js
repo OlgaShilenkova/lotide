@@ -1,16 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ ✅ Assertion Passed: ${[actual]} === ${[expected]}`);
-  } else {
-    console.log(`🛑 🛑Assertion Failed: ${[actual]} !== ${[expected]}`);
 
-  }
+/* allItems: an array of strings that we need to look through
+ itemsToCount: an object specifying what to count
+*/
 
-};
-
-//FUNCTION ITSELF
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
   //  first iteration, with 'Jason' (is supposed to be counted)
   
@@ -18,7 +10,7 @@ const countOnly = function(allItems, itemsToCount) {
 
   for (const item of allItems) {  // allItems is array // now results = { 'Jason': 1 , 'Fang' : 2 }
     // item = 'Fang'
-    console.log(item);
+    // console.log(item);
 
     if (itemsToCount[item]) { // itemsToCount, does it have a key 'Fang' ?
 

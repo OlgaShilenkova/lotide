@@ -9,19 +9,26 @@ const findKeyByValue = require('./findKeyByValue');
 const findKey = require('./findKey');
 const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
+const eqObjects = require('./eqObjects');
+const eqArrays = require('./eqArrays');
+const countOnly = require('./countOnly');
+const countLetters = require('./countLetters');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  without: without,
-  takeUntil: takeUntil,
-  map: map,
-  letterPositions: letterPositions,
-  findKeyByValue: findKeyByValue,
-  findKey: findKey,
-  countOnly: countOnly,
-  countLetters: countLetters,
+   head,
+   tail,
+   middle,
+   without,
+   takeUntil,
+   map,
+   letterPositions,
+   findKeyByValue,
+   findKey,
+   countOnly,
+   countLetters,
+   eqObjects,
+   eqArrays,
+   countOnly,
+   countLetters
 
 };
-console.log(module.exports);

@@ -6,9 +6,6 @@ A callback function
 The map function will return a new array based on the results of the callback function.
 */
 
-const words = ["ground", "control", "to", "major", "tom"];
-
-
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -16,37 +13,6 @@ const map = function(array, callback) {
   }
   return results;
 };
-
-const results1 = map(words, word => word[0]);
-const results2 = map(words, word => word.length);
-const results3 = map(words, word => word[0].toUpperCase());
-// console.log(results1);
-
-
-const assertArraysEqual = function (arr1, arr2) {
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(`✅ Assertion Passed `);
-  } else {
-    console.log(`🛑 Assertion Failed `);
-  }
-};
-
-const eqArrays = function (arr1, arr2) {
-
-  //check if arrays length match
-  //DOES NOT WORK ONLY IN assertArraysEqual.js file
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
 
 // console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']));
 

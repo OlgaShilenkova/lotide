@@ -2,35 +2,6 @@
 Implement middle which will take in an array and return the middle-most element(s) of the given array.
 */
 
-//TEST/ASSERTION FUNCTION
-
-const assertArraysEqual = function(arr1,arr2) {
-  if (eqArrays(arr1,arr2)  === true) {
-    console.log(`✅ Assertion Passed ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑 Assertion Failed${arr1} !== ${arr2}`);
-  }
-};
-
-
-const eqArrays = function(arr1, arr2) {
-
-  //check if arrays length match
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  //iterate through arr1 to get the values
-  for (let i = 0; i < arr1.length; i++) {
-    // console.log(arr1[i]);
-    //if values of arr1 and arr2 is does not complitly match return false
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 //ACTUAL FUNCTION
 
 const middle = function(array) {
@@ -79,17 +50,5 @@ const middle = function(array) {
     return newArray;
   }
 };
-
-
- //console.log(middle([1, 2, 3, 4, 5]));
-// console.log(middle(["a", "b", "c", "d", "e"]));
-// console.log(middle([1, 2, 3, 4, 5, 6]));
-// console.log(middle(["a", "b", "c", "d"]));
-
-//  assertArraysEqual(middle(["a", "b", "c", "d"]), ["b", "c"]);
-
-// console.log(middle([1,2]));
-// console.log(middle([1]));
-
 
 module.exports = middle;

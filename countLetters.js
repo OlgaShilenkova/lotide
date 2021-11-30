@@ -27,12 +27,14 @@ return results;
 };
 
 // console.log( countLetters("lighthouse in the house"));
-console.log(countLetters("hello"));
+// console.log(countLetters("hello"));
 
 //get access to value of key "h"
-console.log(countLetters("h")["h"]);
+// console.log(countLetters("h")["h"]);
 // how to implement assertEqual for this function???
-assertEqual(countLetters("h")["h"], 1); //PASS
+// assertEqual(countLetters("h")["h"], 1); //PASS
 
-console.log(countLetters("hello")["l"]);
-assertEqual(countLetters("hello")["l"], 2);//PASS
+// console.log(countLetters("hello")["l"]);
+// assertEqual(countLetters("hello")["l"], 2);//PASS
+
+module.exports = countLetters;

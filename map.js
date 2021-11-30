@@ -48,8 +48,10 @@ const eqArrays = function (arr1, arr2) {
   return true;
 }
 
-console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']));
+// console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']));
 
-console.log(assertArraysEqual(results2, [6, 7, 2, 5, 3]));
+// console.log(assertArraysEqual(results2, [6, 7, 2, 5, 3]));
 
-console.log(assertArraysEqual(results3, ['G', 'C', 'T', 'M', 'T']));
+//console.log(assertArraysEqual(results3, ['G', 'C', 'T', 'M', 'T']));
+
+module.exports = map;

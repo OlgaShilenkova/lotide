@@ -18,7 +18,7 @@ const findKey = function(object, callback) {
   return undefined;
 };
 
-console.log(findKey({
+/*console.log(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },
   "noma": { stars: 2 },
@@ -35,6 +35,7 @@ console.log(findKey({
   "Ora": { stars: 2 },
   "Akelarre": { stars: 3 }
 }, x => x.stars === 4)); // => undefined
+*/
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -45,6 +46,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+/*
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri": { stars: 3 },
@@ -71,3 +73,6 @@ assertEqual(findKey({
   "Ora": { stars: 2 },
   "Akelarre": { stars: 3 }
 }, x => x.stars === 3), "Akaleri");
+*/
+
+module.exports = findKey;
